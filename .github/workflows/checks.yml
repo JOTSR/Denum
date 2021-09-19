@@ -1,0 +1,33 @@
+name: ckeck
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v2
+
+      - name: Setup latest deno version
+      - uses: denolib/setup-deno@v2
+      - uses: jurassiscripts/setup-velociraptor@v1
+        with:
+          deno-version: v1.x
+
+      - name: Run vr check
+        run: vr run check
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v2
+
+      - name: Setup latest deno version
+        uses: denolib/setup-deno@v2
+        with:
+          deno-version: v1.x
+
+      - name: Run vr test
+        run: vr run test

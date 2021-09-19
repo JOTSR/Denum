@@ -1,0 +1,16 @@
+scripts:
+  format:
+    cmd: deno fmt --check --options-single-quote --unstable
+  
+  lint:
+    cmd: deno lint --unstable
+  
+  check:
+    cmd:
+      - vr lint
+      - vr format
+    gitHook: pre-commit
+
+  test:
+    cmd:
+      - deno
