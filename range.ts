@@ -53,14 +53,6 @@ function _irange(
   end: BigInt,
   _step?: BigInt,
 ): IterableIterator<BigInt>;
-
-/**
- * Set a iteratable range from a generator function, idea for big range fast and without memory overflow.
- * All parameters must be of the same type
- * @param start Start bound
- * @param end End bound
- * @param _step Increment/Decrement step (default = 1 | 1n)
- */
 function* _irange(
   start: number | BigInt,
   end: number | BigInt,
@@ -111,6 +103,13 @@ function* _irange(
   // else throw new Error(`Invalid range definition: [${start}] => [${end}] @[${step}]`)
 }
 
+/**
+ * Set a iteratable range from a generator function, idea for big range fast and without memory overflow.
+ * All parameters must be of the same type
+ * @param start Start bound
+ * @param end End bound
+ * @param _step Increment/Decrement step (default = 1 | 1n)
+ */
 export const irange = _irange;
 
 /**

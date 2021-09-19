@@ -49,13 +49,6 @@ export const randomArray = (min: number, max: number, length: number) => {
 
 function _randomIntArray(min: number, max: number, length: number): number[];
 function _randomIntArray(min: BigInt, max: BigInt, length: number): BigInt[];
-/**
- * Produce an array filled with random integers
- * @param min Minimum value
- * @param max Maximum value
- * @param length Array length
- * @returns Rando integers array
- */
 function _randomIntArray(
   min: number | BigInt,
   max: number | BigInt,
@@ -65,4 +58,11 @@ function _randomIntArray(
   return array as typeof min[];
 }
 
+/**
+ * Produce an array filled with random integers
+ * @param min Minimum value
+ * @param max Maximum value
+ * @param length Array length
+ * @returns Rando integers array
+ */
 export const randomIntArray = _randomIntArray;
