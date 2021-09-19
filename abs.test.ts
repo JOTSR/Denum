@@ -11,9 +11,7 @@ Deno.test({
       BigInt(
         `0b${
           (10000n).toString(2).split('').map((b) =>
-            Math.random() > Math.random()
-              ? b
-              : '0'
+            Math.random() > Math.random() ? b : '0'
           ).join('')
         }`,
       ) - 10000n
