@@ -6,6 +6,7 @@ science computing.
 [![Tags](https://img.shields.io/github/v/release/JOTSR/Denum)](https://github.com/JOTSR/Denum/releases)
 [![CI Status](https://img.shields.io/github/workflow/status/JOTSR/Denum/check)](https://github.com/JOTSR/Denum/actions)
 [![vr scripts](https://badges.velociraptor.run/flat.svg)](https://velociraptor.run)
+[![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/Denum/mod.ts)
 
 ## Usage
 
