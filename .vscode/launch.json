@@ -1,19 +1,19 @@
 {
-    "configurations": [
+  "configurations": [
     {
-        "name": "Debug Deno",
-        "type": "pwa-node",
-        "request": "launch",
-        "program": "${file}",
-        "outputCapture": "std",
-        "cwd": "${workspaceFolder}",
-        "runtimeExecutable": "deno",
-        "runtimeArgs": [
-            "run",
-            "--inspect=127.0.0.1:9229",
-            "--allow-all"
-        ],
-        "attachSimplePort": 9229
+      "name": "Debug Deno",
+      "type": "pwa-node",
+      "request": "launch",
+      "program": "${file}",
+      "outputCapture": "std",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "deno",
+      "runtimeArgs": [
+        "run",
+        "--inspect=127.0.0.1:9229",
+        "--allow-all"
+      ],
+      "attachSimplePort": 9229
     }
-    ]
+  ]
 }
