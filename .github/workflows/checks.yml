@@ -16,7 +16,7 @@ jobs:
       
       - name: Setup latest velociraptor version
         uses: jurassiscripts/setup-velociraptor@v1
-        
+
       - name: Run vr check
         run: vr run check
 
@@ -30,6 +30,9 @@ jobs:
         uses: denolib/setup-deno@v2
         with:
           deno-version: v1.x
+      
+      - name: Setup latest velociraptor version
+        uses: jurassiscripts/setup-velociraptor@v1
 
       - name: Run vr test
         run: vr run test

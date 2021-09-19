@@ -10,8 +10,8 @@ scripts:
   
   check:
     cmd:
-      - vr lint
-      - vr format
+      - vr run lint
+      - vr run format
       - deno run --allow-net='x.nest.land,cdn.deno.land,api.deno.land,raw.githubusercontent.com,github.com,api.github.com' --allow-read='.' --allow-write='deps.ts' https://deno.land/x/dmm@v1.3.2/mod.ts check
     gitHook: pre-commit
 
