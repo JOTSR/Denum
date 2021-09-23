@@ -53,14 +53,6 @@ function _irange(
   end: BigInt,
   _step?: BigInt,
 ): IterableIterator<BigInt>;
-
-/**
- * Set a iteratable range from a generator function, idea for big range fast and without memory overflow.
- * All parameters must be of the same type
- * @param start Start bound
- * @param end End bound
- * @param _step Increment/Decrement step (default = 1 | 1n)
- */
 function* _irange(
   start: number | BigInt,
   end: number | BigInt,
@@ -111,21 +103,20 @@ function* _irange(
   // else throw new Error(`Invalid range definition: [${start}] => [${end}] @[${step}]`)
 }
 
-export const irange = _irange;
-
 /**
- * Return an array based on input range.
+ * Set a iteratable range from a generator function, idea for big range fast and without memory overflow.
  * All parameters must be of the same type
  * @param start Start bound
  * @param end End bound
  * @param _step Increment/Decrement step (default = 1 | 1n)
- * @returns Array of same type of parameters
  */
-export const range = (
+export const irange = _irange;
+
+function _range (
   start: number | BigInt,
   end: number | BigInt,
   _step?: number | BigInt,
-) => {
+) {
   //Initialize step to 1 and set number|BigInt type
   const step = (_step === undefined)
     ? ((typeof (start) === 'bigint')
@@ -154,4 +145,14 @@ export const range = (
       .map((_, index) => start + index * step) as number[];
   }
   return [] as typeof start[];
-};
+}
+
+/**
+ * Return an array based on input range.
+ * All parameters must be of the same type
+ * @param start Start bound
+ * @param end End bound
+ * @param _step Increment/Decrement step (default = 1 | 1n)
+ * @returns Array of same type of parameters
+ */
+ export const range = _range
