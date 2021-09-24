@@ -9,12 +9,12 @@ export const random = (min: number, max: number) => {
 };
 
 function _randomInt(min: number, max: number): number;
-function _randomInt(min: BigInt, max: BigInt): BigInt;
+function _randomInt(min: bigint, max: bigint): bigint;
 function _randomInt(
-  min: number | BigInt,
-  max: number | BigInt,
-): number | BigInt {
-  //BigInt
+  min: number | bigint,
+  max: number | bigint,
+): number | bigint {
+  //bigint
   if (typeof (min) == 'bigint' && typeof (max) == 'bigint') {
     return BigInt(
       `0b${
@@ -52,10 +52,10 @@ export const randomArray = (min: number, max: number, length: number) => {
 };
 
 function _randomIntArray(min: number, max: number, length: number): number[];
-function _randomIntArray(min: BigInt, max: BigInt, length: number): BigInt[];
+function _randomIntArray(min: bigint, max: bigint, length: number): bigint[];
 function _randomIntArray(
-  min: number | BigInt,
-  max: number | BigInt,
+  min: number | bigint,
+  max: number | bigint,
   length: number,
 ) {
   if (typeof min === 'number' && typeof max === "number") {

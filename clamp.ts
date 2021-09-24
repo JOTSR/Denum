@@ -1,10 +1,10 @@
 function _clamp(value: number, min: number, max: number): number;
-function _clamp(value: BigInt, min: BigInt, max: BigInt): BigInt;
+function _clamp(value: bigint, min: bigint, max: bigint): bigint;
 function _clamp(
-  value: number | BigInt,
-  min: number | BigInt,
-  max: number | BigInt,
-): number | BigInt {
+  value: number | bigint,
+  min: number | bigint,
+  max: number | bigint,
+): number | bigint {
   if (min > max) {
     throw new RangeError(`Invalid range, min:${min} > max: ${max}`);
   }
