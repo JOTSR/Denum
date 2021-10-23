@@ -47,7 +47,7 @@ function _randomInt(
  * @returns Random numbers array
  */
 export const randomArray = (min: number, max: number, length: number) => {
-  const array = new Array<number>(length).map((_) => random(min, max));
+  const array = new Array<number>(length).fill(1).map((_) => random(min, max));
   return array;
 };
 
@@ -59,11 +59,11 @@ function _randomIntArray(
   length: number,
 ) {
   if (typeof min === 'number' && typeof max === "number") {
-    const array = new Array<typeof min>(length).map((_) => randomInt(min, max));
+    const array = new Array<typeof min>(length).fill(1).map((_) => randomInt(min, max));
     return array as typeof min[];
   }
   if (typeof min === 'bigint' && typeof max === "bigint") {
-    const array = new Array<typeof min>(length).map((_) => randomInt(min, max));
+    const array = new Array<typeof min>(length).fill(1n).map((_) => randomInt(min, max));
     return array as typeof min[];
   }
   return [] as typeof min[];
