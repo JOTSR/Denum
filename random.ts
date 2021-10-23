@@ -26,7 +26,7 @@ function _randomInt(
   }
   //Number
   if (typeof (min) == 'number' && typeof (max) == 'number') {
-    return Math.random() * (max - min) + min;
+    return Math.round(Math.random() * (max - min) + min);
   }
   throw new TypeError('Parameters must be of the same type');
 }
