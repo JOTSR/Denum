@@ -11,4 +11,4 @@ Mathematic module for [Deno](https://deno.land) that provide a helper for scienc
 
 All the modules are exposed in `mod.ts`
 
-[Documentation](https://doc.deno.land/https/raw.githubusercontent.com/JOTSR/Denum/main/mod.ts)
+[Documentation](https://doc.deno.land/https/https/deno.land/x/denum/mod.ts)
