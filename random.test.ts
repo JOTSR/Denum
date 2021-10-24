@@ -22,7 +22,7 @@ Deno.test({
     const max = Math.round(Math.random() * 1e10) / 1e5 + min;
     const randoms = new Array(5).fill(1).map((_) => randomInt(min, max));
     for (const rand of randoms) {
-      if (rand < min || rand > max) {
+      if (rand < min || rand > max || rand !== Math.round(rand)) {
         throw new Error(`${rand} is out of range [${min}, ${max}]`);
       }
     }
