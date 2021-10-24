@@ -1,12 +1,15 @@
-function _abs(value: number): number;
-function _abs(value: BigInt): BigInt;
-function _abs(value: number | BigInt): number | BigInt {
-  return value < 0 ? -value : value;
-}
-
 /**
  * Returns the absolute value of a number.
- * @param value Numeric expression for which the absolute value is needed.
- * @returns Absolute value of input
+ * @param {number} value Numeric expression for which the absolute value is needed.
+ * @returns {number} Absolute value of input
  */
-export const abs = _abs;
+export function abs(value: number): number;
+/**
+ * Returns the absolute value of a number.
+ * @param {bigint} value Numeric expression for which the absolute value is needed.
+ * @returns {bigint} Absolute value of input
+ */
+export function abs(value: bigint): bigint;
+export function abs(value: number | bigint): number | bigint {
+  return value < 0 ? -value : value;
+}

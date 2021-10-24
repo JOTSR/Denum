@@ -8,17 +8,13 @@ export const random = (min: number, max: number) => {
   return Math.random() * (max - min) + min;
 };
 
-/**
- * Genearate a bounded random integer
- * @param min Minimum value
- * @param max Maximum value
- * @returns Random interger
- */
-export const randomInt = (
-  min: number | BigInt,
-  max: number | BigInt,
-): number | BigInt => {
-  //BigInt
+function _randomInt(min: number, max: number): number;
+function _randomInt(min: bigint, max: bigint): bigint;
+function _randomInt(
+  min: number | bigint,
+  max: number | bigint,
+): number | bigint {
+  //bigint
   if (typeof (min) == 'bigint' && typeof (max) == 'bigint') {
     return BigInt(
       `0b${
@@ -30,10 +26,18 @@ export const randomInt = (
   }
   //Number
   if (typeof (min) == 'number' && typeof (max) == 'number') {
-    return Math.random() * (max - min) + min;
+    return Math.round(Math.random() * (max - min) + min);
   }
   throw new TypeError('Parameters must be of the same type');
-};
+}
+
+/**
+ * Genearate a bounded random integer
+ * @param min Minimum value
+ * @param max Maximum value
+ * @returns Random interger
+ */
+ export const randomInt = _randomInt;
 
 /**
  * Produce an array filled with random values
@@ -43,19 +47,26 @@ export const randomInt = (
  * @returns Random numbers array
  */
 export const randomArray = (min: number, max: number, length: number) => {
-  const array = new Array<number>(length).map((_) => random(min, max));
+  const array = new Array<number>(length).fill(1).map((_) => random(min, max));
   return array;
 };
 
 function _randomIntArray(min: number, max: number, length: number): number[];
-function _randomIntArray(min: BigInt, max: BigInt, length: number): BigInt[];
+function _randomIntArray(min: bigint, max: bigint, length: number): bigint[];
 function _randomIntArray(
-  min: number | BigInt,
-  max: number | BigInt,
+  min: number | bigint,
+  max: number | bigint,
   length: number,
 ) {
-  const array = new Array<typeof min>(length).map((_) => randomInt(min, max));
-  return array as typeof min[];
+  if (typeof min === 'number' && typeof max === "number") {
+    const array = new Array<typeof min>(length).fill(1).map((_) => randomInt(min, max));
+    return array as typeof min[];
+  }
+  if (typeof min === 'bigint' && typeof max === "bigint") {
+    const array = new Array<typeof min>(length).fill(1n).map((_) => randomInt(min, max));
+    return array as typeof min[];
+  }
+  return [] as typeof min[];
 }
 
 /**

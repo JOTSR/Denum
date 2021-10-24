@@ -1,7 +1,7 @@
 const checkRangeProperties = (
-  start: number | BigInt,
-  end: number | BigInt,
-  step: number | BigInt,
+  start: number | bigint,
+  end: number | bigint,
+  step: number | bigint,
 ) => {
   if (
     typeof (start) === 'number' && typeof (end) === 'number' &&
@@ -49,16 +49,16 @@ function _irange(
   _step?: number,
 ): IterableIterator<number>;
 function _irange(
-  start: BigInt,
-  end: BigInt,
-  _step?: BigInt,
-): IterableIterator<BigInt>;
+  start: bigint,
+  end: bigint,
+  _step?: bigint,
+): IterableIterator<bigint>;
 function* _irange(
-  start: number | BigInt,
-  end: number | BigInt,
-  _step?: number | BigInt,
-): IterableIterator<number | BigInt> {
-  //Initialize step to 1 and set number|BigInt type
+  start: number | bigint,
+  end: number | bigint,
+  _step?: number | bigint,
+): IterableIterator<number | bigint> {
+  //Initialize step to 1 and set number|bigint type
   const step = (_step === undefined)
     ? ((typeof (start) === 'bigint')
       ? (start > end) ? -1n : 1n
@@ -112,20 +112,12 @@ function* _irange(
  */
 export const irange = _irange;
 
-/**
- * Return an array based on input range.
- * All parameters must be of the same type
- * @param start Start bound
- * @param end End bound
- * @param _step Increment/Decrement step (default = 1 | 1n)
- * @returns Array of same type of parameters
- */
-export const range = (
-  start: number | BigInt,
-  end: number | BigInt,
-  _step?: number | BigInt,
-) => {
-  //Initialize step to 1 and set number|BigInt type
+function _range (
+  start: number | bigint,
+  end: number | bigint,
+  _step?: number | bigint,
+) {
+  //Initialize step to 1 and set number|bigint type
   const step = (_step === undefined)
     ? ((typeof (start) === 'bigint')
       ? (start > end) ? -1n : 1n
@@ -142,7 +134,7 @@ export const range = (
   ) {
     return new Array(Number((end - start) / step + 1n))
       .fill(1n)
-      .map((_, index) => start + BigInt(index) * step) as BigInt[];
+      .map((_, index) => start + BigInt(index) * step) as bigint[];
   }
   if (
     typeof (start) === 'number' && typeof (end) === 'number' &&
@@ -153,4 +145,14 @@ export const range = (
       .map((_, index) => start + index * step) as number[];
   }
   return [] as typeof start[];
-};
+}
+
+/**
+ * Return an array based on input range.
+ * All parameters must be of the same type
+ * @param start Start bound
+ * @param end End bound
+ * @param _step Increment/Decrement step (default = 1 | 1n)
+ * @returns Array of same type of parameters
+ */
+ export const range = _range
