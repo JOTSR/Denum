@@ -1,13 +1,19 @@
-export function map(value: number, initialBounds: [number, number], destinationBounds: [number, number]): number
-export function map(value: bigint, initialBounds: [bigint, bigint], destinationBounds: [bigint, bigint]): bigint
-
 /**
  * Re-map a value from initial bounds to another bounds
- * @param value Value to map
- * @param initialBounds [min, max] initial bounds
- * @param destinationBounds [min, max] destination bounds
- * @returns Re-mapped value
+ * @param {number} value Value to map
+ * @param {[number, number]} initialBounds [min, max] initial bounds
+ * @param {[number, number]} destinationBounds [min, max] destination bounds
+ * @returns {number} Re-mapped value
  */
+export function map(value: number, initialBounds: [number, number], destinationBounds: [number, number]): number
+/**
+ * Re-map a value from initial bounds to another bounds
+ * @param {bigint} value Value to map
+ * @param {[bigint, bigint]} initialBounds [min, max] initial bounds
+ * @param {[bigint, bigint]} destinationBounds [min, max] destination bounds
+ * @returns {bigint} Re-mapped value
+ */
+export function map(value: bigint, initialBounds: [bigint, bigint], destinationBounds: [bigint, bigint]): bigint
 export function map(value: number | bigint, initialBounds: [number | bigint, number | bigint], destinationBounds: [number | bigint, number | bigint]): number | bigint {
     if(value < initialBounds[0] || value > initialBounds[1]) {
         throw new RangeError(`Value(${value}) is out of bounds [${initialBounds.join(', ')}]`)
