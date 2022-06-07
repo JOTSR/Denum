@@ -1,4 +1,4 @@
-import { assertEquals } from './deps.ts';
+import { assertEquals } from '../deps.ts';
 import { map } from './map.ts';
 import { randomIntArray } from './random.ts';
 

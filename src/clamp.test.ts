@@ -1,4 +1,4 @@
-import { assertEquals } from './deps.ts';
+import { assertEquals } from '../deps.ts';
 import { clamp } from './clamp.ts';
 
 Deno.test({

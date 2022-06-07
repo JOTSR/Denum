@@ -1,8 +1,8 @@
-export { abs } from './abs.ts';
-export { clamp } from './clamp.ts';
-export { map } from './map.ts';
-export { geometricMean, harmonicMean, mean, quadraticMean } from './mean.ts';
-export { median, quantile } from './median.ts';
-export { random, randomArray, randomInt, randomIntArray } from './random.ts';
-export { irange, range } from './range.ts';
-export { round } from './round.ts';
+export { abs } from './src/abs.ts';
+export { clamp } from './src/clamp.ts';
+export { map } from './src/map.ts';
+export { geometricMean, harmonicMean, mean, quadraticMean } from './src/mean.ts';
+export { median, quantile } from './src/median.ts';
+export { random, randomArray, randomInt, randomIntArray } from './src/random.ts';
+export { irange, range } from './src/range.ts';
+export { round } from './src/round.ts';

@@ -1,4 +1,4 @@
-import { assertEquals } from './deps.ts';
+import { assertEquals } from '../deps.ts';
 import { irange, range } from './range.ts';
 
 Deno.test({

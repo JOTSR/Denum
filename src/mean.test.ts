@@ -1,4 +1,4 @@
-import { assertEquals } from './deps.ts';
+import { assertEquals } from '../deps.ts';
 import { random, randomArray } from './random.ts';
 import { geometricMean, harmonicMean, mean } from './mean.ts';
 

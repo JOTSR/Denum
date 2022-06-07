@@ -1,4 +1,4 @@
-import { assertEquals } from './deps.ts';
+import { assertEquals } from '../deps.ts';
 import { randomArray, randomInt } from './random.ts';
 import { median, quantile } from './median.ts';
 
