@@ -1,4 +1,4 @@
-import { assertEquals } from '../deps.ts';
+import { assertEquals, assertThrows } from '../deps.ts';
 import { clamp } from './clamp.ts';
 
 Deno.test({
@@ -32,3 +32,19 @@ Deno.test({
     );
   },
 });
+
+Deno.test({
+  name: 'It should throw a range error',
+  fn: () => {
+    //number
+    const number = Math.random() * 100
+    const min = Math.random() * 10
+    const max = min * Math.random() - 1
+    assertThrows(() => clamp(number, min, max), RangeError, 'Invalid range')
+    //BigInt
+    const bigint = BigInt(Math.round(Math.random() * 100))
+    const bigMin = BigInt(Math.round(Math.random() * 10))
+    const bigMax = bigMin - BigInt(Math.round(Math.random() * 10 + 1))
+    assertThrows(() => clamp(bigint, bigMin, bigMax), RangeError, 'Invalid range')
+  }
+})
