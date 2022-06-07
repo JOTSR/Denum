@@ -1,11 +1,12 @@
-export { abs } from './src/abs.ts';
-export { clamp } from './src/clamp.ts';
-export { map } from './src/map.ts';
-export { geometricMean, harmonicMean, mean, quadraticMean } from './src/mean.ts';
-export { median, quantile } from './src/median.ts';
-export { random, randomArray, randomInt, randomIntArray } from './src/random.ts';
-export { irange, range } from './src/range.ts';
-export { round } from './src/round.ts';
-export { factors } from './src/factors.ts';
-export { gcd } from './src/gcd.ts';
-export { sign } from './src/sign.ts'
+export * from './src/abs.ts';
+export * from './src/clamp.ts';
+export * from './src/factors.ts';
+export * from './src/gcd.ts';
+export * from './src/map.ts';
+export * from './src/mean.ts';
+export * from './src/median.ts';
+export * from './src/prime.ts'; 
+export * from './src/random.ts';
+export * from './src/range.ts';
+export * from './src/round.ts';
+export * from './src/sign.ts';
