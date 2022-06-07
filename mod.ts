@@ -6,3 +6,6 @@ export { median, quantile } from './src/median.ts';
 export { random, randomArray, randomInt, randomIntArray } from './src/random.ts';
 export { irange, range } from './src/range.ts';
 export { round } from './src/round.ts';
+export { factors } from './src/factors.ts';
+export { gcd } from './src/gcd.ts';
+export { sign } from './src/sign.ts'
