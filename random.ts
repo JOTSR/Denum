@@ -1,5 +1,5 @@
 /**
- * Genearate a bounded random number
+ * Generate a bounded random number
  * @param {number} min Minimum value
  * @param {number} max Maximum value
  * @returns {number} Random number
@@ -9,23 +9,23 @@ export function random(min: number, max: number) {
 }
 
 /**
- * Genearate a bounded random integer
+ * Generate a bounded random integer
  * @param {number} min Minimum value
  * @param {number} max Maximum value
- * @returns {number} Random interger
+ * @returns {number} Random integer
  */
 export function randomInt(min: number, max: number): number;
 /**
- * Genearate a bounded random integer
+ * Generate a bounded random integer
  * @param {bigint} min Minimum value
  * @param {bigint} max Maximum value
- * @returns {bigint} Random interger
+ * @returns {bigint} Random integer
  */
 export function randomInt(min: bigint, max: bigint): bigint;
-export function randomInt(
-  min: number | bigint,
-  max: number | bigint,
-): number | bigint {
+export function randomInt<T extends number | bigint>(
+  min: T,
+  max: T,
+): T {
   //bigint
   if (typeof (min) == 'bigint' && typeof (max) == 'bigint') {
     return BigInt(
@@ -34,11 +34,11 @@ export function randomInt(
           Math.random() > Math.random() ? b : '0'
         ).join('')
       }`,
-    ) + min;
+    ) + min as T;
   }
   //Number
   if (typeof (min) == 'number' && typeof (max) == 'number') {
-    return Math.round(Math.random() * (max - min) + min);
+    return Math.round(Math.random() * (max - min) + min) as T;
   }
   throw new TypeError('Parameters must be of the same type');
 }
@@ -60,28 +60,42 @@ export function randomArray(min: number, max: number, length: number) {
  * @param {number} min Minimum value
  * @param {number} max Maximum value
  * @param {number} length Array length
- * @returns {number[]} Rando integers array
+ * @returns {number[]} Random integers array
  */
-export function randomIntArray(min: number, max: number, length: number): number[];
+export function randomIntArray(
+  min: number,
+  max: number,
+  length: number,
+): number[];
 /**
  * Produce an array filled with random integers
  * @param {bigint} min Minimum value
  * @param {bigint} max Maximum value
  * @param {bigint} length Array length
- * @returns {bigint[]} Rando integers array
+ * @returns {bigint[]} Random integers array
  */
-export function randomIntArray(min: bigint, max: bigint, length: number): bigint[];
 export function randomIntArray(
-  min: number | bigint,
-  max: number | bigint,
+  min: bigint,
+  max: bigint,
+  length: number,
+): bigint[];
+export function randomIntArray<T extends number | bigint>(
+  min: T,
+  max: T,
   length: number,
 ) {
-  if (typeof min === 'number' && typeof max === "number") {
-    const array = new Array<typeof min>(length).fill(1).map((_) => randomInt(min, max));
+  if (typeof min === 'number' && typeof max === 'number') {
+    //@ts-ignore type already checked
+    const array = new Array<typeof min>(length).fill(1).map((_) =>
+      randomInt(min, max)
+    );
     return array as typeof min[];
   }
-  if (typeof min === 'bigint' && typeof max === "bigint") {
-    const array = new Array<typeof min>(length).fill(1n).map((_) => randomInt(min, max));
+  if (typeof min === 'bigint' && typeof max === 'bigint') {
+    //@ts-ignore type already checked
+    const array = new Array<typeof min>(length).fill(1n).map((_) =>
+      randomInt(min, max)
+    );
     return array as typeof min[];
   }
   return [] as typeof min[];

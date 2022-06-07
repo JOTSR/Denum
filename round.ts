@@ -5,13 +5,13 @@
  * @param mode Round mode (default = nearest)
  * @returns Rounded value
  */
-export const round = (
+export function round(
   number: number,
   decimals = 0,
   mode: 'ceil' | 'floor' | 'nearest' = 'nearest',
-) => {
+): number {
   const power = 10 ** decimals;
   if (mode == 'ceil') return Math.ceil(number * power) / power;
   if (mode == 'floor') return Math.floor(number * power) / power;
   return Math.round(number * power) / power;
-};
+}
