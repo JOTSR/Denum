@@ -1,6 +1,7 @@
 # Denum
 
-Mathematic module for [Deno](https://deno.land) that provide a helper for science computing.
+Mathematic module for [Deno](https://deno.land) that provide a helper for
+science computing.
 
 [![Tags](https://img.shields.io/github/v/release/JOTSR/Denum)](https://github.com/JOTSR/Denum/releases)
 [![CI Status](https://img.shields.io/github/workflow/status/JOTSR/Denum/check)](https://github.com/JOTSR/Denum/actions)

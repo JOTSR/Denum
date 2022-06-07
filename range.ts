@@ -112,7 +112,7 @@ function* _irange(
  */
 export const irange = _irange;
 
-function _range (
+function _range(
   start: number | bigint,
   end: number | bigint,
   _step?: number | bigint,
@@ -155,4 +155,4 @@ function _range (
  * @param _step Increment/Decrement step (default = 1 | 1n)
  * @returns Array of same type of parameters
  */
- export const range = _range
+export const range = _range;

@@ -10,6 +10,6 @@ export function abs(value: number): number;
  * @returns {bigint} Absolute value of input
  */
 export function abs(value: bigint): bigint;
-export function abs(value: number | bigint): number | bigint {
-  return value < 0 ? -value : value;
+export function abs<T extends number | bigint>(value: T): T {
+  return (value < 0 ? -value : value) as T;
 }
