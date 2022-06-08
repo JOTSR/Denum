@@ -82,7 +82,7 @@ export class Frac {
       const den = BigInt(str.split('/')[1]);
       return new Frac({ num, den });
     }
-    throw new TypeError(`Invalid string ${str}`)
+    throw new TypeError(`Invalid string ${str}`);
   }
 
   /**
@@ -91,13 +91,13 @@ export class Frac {
    * @returns A new instance of the Frac class.
    */
   static fromLatex(latex: string): Frac {
-    const sign = latex.match(/(\\left\(\s*-\s*).+(\\right\))/i) ? -1n : 1n
-    const match = latex.match(/frac{(\d+)}{(\d+)}/i)
+    const sign = latex.match(/(\\left\(\s*-\s*).+(\\right\))/i) ? -1n : 1n;
+    const match = latex.match(/frac{(\d+)}{(\d+)}/i);
     if (match?.length === 3) {
-      const [_, num, den] = match as [string, string, string]
-      return new Frac({num: sign * BigInt(num), den: BigInt(den)})
+      const [_, num, den] = match as [string, string, string];
+      return new Frac({ num: sign * BigInt(num), den: BigInt(den) });
     }
-    throw new TypeError(`Unable to parse latex ${latex}`)
+    throw new TypeError(`Unable to parse latex ${latex}`);
   }
 
   /**
@@ -179,7 +179,7 @@ export class Frac {
    * @returns The return value is a new Frac
    */
   add(...frac: Frac[]): Frac {
-    return Frac.add(this, ...frac)
+    return Frac.add(this, ...frac);
   }
 
   /**
@@ -188,7 +188,7 @@ export class Frac {
    * @returns The return value is a new Frac
    */
   sub(...frac: Frac[]): Frac {
-    return Frac.sub(this, ...frac)
+    return Frac.sub(this, ...frac);
   }
 
   /**
@@ -197,7 +197,7 @@ export class Frac {
    * @returns The return value is a new Frac
    */
   multiply(...frac: Frac[]): Frac {
-    return Frac.multiply(this, ...frac)
+    return Frac.multiply(this, ...frac);
   }
 
   /**
@@ -206,16 +206,15 @@ export class Frac {
    * @returns The return value is a new Frac
    */
   divide(...frac: Frac[]): Frac {
-    return Frac.divide(this, ...frac)
+    return Frac.divide(this, ...frac);
   }
-
 
   /**
    * It returns a new fraction that is the same as the original fraction, but simplified
    * @returns The simplified fraction.
    */
   simplify(): Frac {
-    return Frac.simplify(this)
+    return Frac.simplify(this);
   }
 
   /**
