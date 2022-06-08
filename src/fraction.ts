@@ -15,20 +15,29 @@ export class Frac {
     repeating = false,
   ) {
     if (typeof n === 'number' || typeof n === 'string') {
-      n = Frac.toFrac(n, repeating);
+      n = Frac.fromNumber(n, repeating);
     }
     this.#num = n.num * sign(n.den);
     this.#den = abs(n.den);
   }
 
+  /**
+   * get fraction numerator
+   */
   get num() {
     return this.#num;
   }
 
+  /**
+   * get fraction denominator
+   */
   get den() {
     return this.#den;
   }
 
+  /**
+   * get fraction value {num, den}
+   */
   get value() {
     return { num: this.#num, den: this.#den };
   }
@@ -39,7 +48,7 @@ export class Frac {
    * @param [repeating=false] - boolean
    * @returns the corresponding fraction
    */
-  static toFrac(n: number | string, repeating = false): Frac {
+  static fromNumber(n: number | string, repeating = false): Frac {
     if (typeof n === 'number' && n.toString().length > 15) {
       n = n.toString().slice(0, -1);
       console.warn(
@@ -47,12 +56,6 @@ export class Frac {
       );
     }
     n = n.toString();
-
-    if (n.includes('/')) {
-      const num = BigInt(n.split('/')[0]);
-      const den = BigInt(n.split('/')[1]);
-      return new Frac({ num, den });
-    }
 
     const sign = n.includes('-') ? -1n : 1n;
     n = n.replace('-', '');
@@ -66,6 +69,35 @@ export class Frac {
       (repeating ? BigInt(n.split('.')[0]) : 0n);
     const _gcd = gcd(numerator, denominator);
     return new Frac({ num: sign * numerator / _gcd, den: denominator / _gcd });
+  }
+
+  /**
+   * It takes a string of shape "int/int" and returns a fraction
+   * @param {string} str - string
+   * @returns A new instance of the Frac class
+   */
+  static fromString(str: string): Frac {
+    if (str.includes('/')) {
+      const num = BigInt(str.split('/')[0]);
+      const den = BigInt(str.split('/')[1]);
+      return new Frac({ num, den });
+    }
+    throw new TypeError(`Invalid string ${str}`)
+  }
+
+  /**
+   * It takes a string in the form of a LaTeX fraction, and returns a Frac object
+   * @param {string} latex - string
+   * @returns A new instance of the Frac class.
+   */
+  static fromLatex(latex: string): Frac {
+    const sign = latex.match(/(\\left\(\s*-\s*).+(\\right\))/i) ? -1n : 1n
+    const match = latex.match(/frac{(\d+)}{(\d+)}/i)
+    if (match?.length === 3) {
+      const [_, num, den] = match as [string, string, string]
+      return new Frac({num: sign * BigInt(num), den: BigInt(den)})
+    }
+    throw new TypeError(`Unable to parse latex ${latex}`)
   }
 
   /**
@@ -141,6 +173,56 @@ export class Frac {
     return new Frac({ num: num / _gcd, den: den / _gcd });
   }
 
+  /**
+   * returns a new fraction that is the sum of the current Frac and all args
+   * @param {Frac[]} frac - Frac[]
+   * @returns The return value is a new Frac
+   */
+  add(...frac: Frac[]): Frac {
+    return Frac.add(this, ...frac)
+  }
+
+  /**
+   * returns a new fraction that is the subtraction of the current Frac by all args
+   * @param {Frac[]} frac - Frac[]
+   * @returns The return value is a new Frac
+   */
+  sub(...frac: Frac[]): Frac {
+    return Frac.sub(this, ...frac)
+  }
+
+  /**
+   * returns a new fraction that is the product of the current Frac and all args
+   * @param {Frac[]} frac - Frac[]
+   * @returns The return value is a new Frac
+   */
+  multiply(...frac: Frac[]): Frac {
+    return Frac.multiply(this, ...frac)
+  }
+
+  /**
+   * returns a new fraction that is the quotient of the current Frac by all args
+   * @param {Frac[]} frac - Frac[]
+   * @returns The return value is a new Frac
+   */
+  divide(...frac: Frac[]): Frac {
+    return Frac.divide(this, ...frac)
+  }
+
+
+  /**
+   * It returns a new fraction that is the same as the original fraction, but simplified
+   * @returns The simplified fraction.
+   */
+  simplify(): Frac {
+    return Frac.simplify(this)
+  }
+
+  /**
+   * If the numerator and denominator are within the range of a 32 bit float, and the denominator is
+   * not zero, return the float value of the numerator divided by the denominator
+   * @returns A function that returns a float.
+   */
   toFloat(): number {
     if (
       Number.MAX_SAFE_INTEGER > this.#den &&
@@ -156,15 +238,22 @@ export class Frac {
     );
   }
 
+  /**
+   * It returns a string representation of the fraction.
+   * @returns The numerator and denominator of the fraction.
+   */
   toString(): string {
     return `${this.#num}/${this.#den}`;
   }
 
+  /**
+   * If the numerator is negative, return the fraction wrapped in parentheses. Otherwise, return the
+   * fraction as a LaTeX string
+   * @returns A string.
+   */
   toLatex(): string {
     const frac = `\\frac{${abs(this.#num)}}{${this.#den}}`;
     if (sign(this.#num) === -1n) return `\\left( - ${frac} \\right)`;
     return frac;
   }
-
-  //TODO static fromLatex
 }
