@@ -1,6 +1,7 @@
 export * from './src/abs.ts';
 export * from './src/clamp.ts';
 export * from './src/factors.ts';
+export * from './src/fraction.ts';
 export * from './src/gcd.ts';
 export * from './src/map.ts';
 export * from './src/mean.ts';
