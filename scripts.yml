@@ -8,13 +8,14 @@ scripts:
   update:
     cmd: deno run --allow-net='x.nest.land,cdn.deno.land,api.deno.land,raw.githubusercontent.com,github.com,api.github.com' --allow-read='.' --allow-write='deps.ts' https://deno.land/x/dmm@v1.3.2/mod.ts update
   
+  test:
+    cmd:
+      - deno test --coverage=cov_profile && deno coverage .\cov_profile\
+
   check:
     cmd:
       - vr run lint
       - vr run format
+      - vr run test
       - deno run --allow-net='x.nest.land,cdn.deno.land,api.deno.land,raw.githubusercontent.com,github.com,api.github.com' --allow-read='.' --allow-write='deps.ts' https://deno.land/x/dmm@v1.3.2/mod.ts check
     gitHook: pre-commit
-
-  test:
-    cmd:
-      - deno test
