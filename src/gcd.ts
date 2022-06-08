@@ -1,11 +1,11 @@
 /**
  * It takes two or more numbers and returns the greatest common divisor of all of them
- * @param {number | bigint} a - The first number to calculate the greatest common divisor for
- * @param {number | bigint} b - The second number to calculate the greatest common divisor for
- * @param {(number | bigint)[]} c - Other numbers to take into account
+ * @param {(number | bigint)[]} n - Numbers to calculate the greatest common divisor for
  * @returns {number | bigint} The greatest common divisor of the given numbers.
  */
-export function gcd<T extends number | bigint>(a: T, b: T, ...c: T[]): T {
+export function gcd<T extends number | bigint>(...n: T[]): T {
+  let [a, b, ...c] = n;
+
   if (a < 0 || b < 0) {
     throw new RangeError(`Only positive number allowed: (${a}, ${b})`);
   }
@@ -23,7 +23,5 @@ export function gcd<T extends number | bigint>(a: T, b: T, ...c: T[]): T {
     r = _r;
   }
 
-  if (c.length === 0) return b;
-
-  return gcd(b, c[0], ...c.slice(1));
+  return (c.length === 0) ? b : gcd(b, ...c);
 }
