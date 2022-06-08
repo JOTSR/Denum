@@ -10,7 +10,8 @@ scripts:
   
   test:
     cmd:
-      - deno test --coverage=cov_profile && deno coverage .\cov_profile\
+      - deno test --coverage=cov_profile
+      - deno coverage .\cov_profile\
 
   check:
     cmd:
