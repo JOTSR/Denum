@@ -1,4 +1,4 @@
-import { gcd } from "../mod.ts";
+import { gcd } from '../mod.ts';
 
 /**
  * The least common denominator of a set of numbers is the smallest number that is a multiple of all the
@@ -12,8 +12,8 @@ export function lcd<T extends number | bigint>(...n: T[]): T {
     throw new RangeError(`Only positive number allowed: (${a}, ${b})`);
   }
   if (
-    (typeof a !== "bigint" && !Number.isInteger(a)) ||
-    (typeof b !== "bigint" && !Number.isInteger(b))
+    (typeof a !== 'bigint' && !Number.isInteger(a)) ||
+    (typeof b !== 'bigint' && !Number.isInteger(b))
   ) {
     throw new TypeError(`Only integer number allowed: (${a}, ${b})`);
   }

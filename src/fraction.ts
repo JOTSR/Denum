@@ -173,22 +173,22 @@ export class Frac {
     return new Frac({ num: num / _gcd, den: den / _gcd });
   }
 
- /**
-  * It takes a fraction and returns a new fraction that is the inverse of the original fraction
-  * @param {Frac} frac - The fraction to invert.
-  * @returns A new Frac object with the numerator and denominator swapped.
-  */
+  /**
+   * It takes a fraction and returns a new fraction that is the inverse of the original fraction
+   * @param {Frac} frac - The fraction to invert.
+   * @returns A new Frac object with the numerator and denominator swapped.
+   */
   static invert(frac: Frac): Frac {
-    return new Frac({num: frac.den, den: frac.num})
+    return new Frac({ num: frac.den, den: frac.num });
   }
 
- /**
-  * It returns a new fraction that is the opposite of the fraction passed in
-  * @param {Frac} frac - Frac
-  * @returns A new Frac object with the opposite sign of the original Frac object.
-  */
+  /**
+   * It returns a new fraction that is the opposite of the fraction passed in
+   * @param {Frac} frac - Frac
+   * @returns A new Frac object with the opposite sign of the original Frac object.
+   */
   static oppose(frac: Frac): Frac {
-    return new Frac({num: - frac.num, den: frac.den})
+    return new Frac({ num: -frac.num, den: frac.den });
   }
 
   /**
@@ -240,7 +240,7 @@ export class Frac {
    * @returns The inverse of the fraction.
    */
   invert(): Frac {
-    return Frac.invert(this)
+    return Frac.invert(this);
   }
 
   /**
@@ -248,7 +248,7 @@ export class Frac {
    * @returns The opposite of the fraction.
    */
   oppose() {
-    return Frac.oppose(this)
+    return Frac.oppose(this);
   }
 
   /**

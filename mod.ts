@@ -6,7 +6,7 @@ export * from './src/gcd.ts';
 export * from './src/map.ts';
 export * from './src/mean.ts';
 export * from './src/median.ts';
-export * from './src/prime.ts'; 
+export * from './src/prime.ts';
 export * from './src/random.ts';
 export * from './src/range.ts';
 export * from './src/round.ts';

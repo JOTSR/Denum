@@ -1,4 +1,4 @@
-import { factors } from "../mod.ts";
+import { factors } from '../mod.ts';
 
 /**
  * Test if a given number is prime or not
@@ -45,7 +45,7 @@ export function getPrimes<T extends number | bigint>(...args: T[]): T[] {
 
   if (args.length === 1) {
     const quantity = args[0];
-    let counter = (typeof quantity === "number") ? 2 : 2n;
+    let counter = (typeof quantity === 'number') ? 2 : 2n;
 
     while (array.length < quantity) {
       if (isPrime(counter)) {

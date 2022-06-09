@@ -1,9 +1,9 @@
-import { assertEquals } from "../deps.ts";
-import { randomInt, randomIntArray } from "../mod.ts";
-import { getPrimes, isPrime } from "./prime.ts";
+import { assertEquals } from '../deps.ts';
+import { randomInt, randomIntArray } from '../mod.ts';
+import { getPrimes, isPrime } from './prime.ts';
 
 Deno.test({
-  name: "It should check if a value is prime or not",
+  name: 'It should check if a value is prime or not',
   fn: () => {
     //number
     const range = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
@@ -32,7 +32,7 @@ Deno.test({
 });
 
 Deno.test({
-  name: "It should return an array of prime number between two values",
+  name: 'It should return an array of prime number between two values',
   fn: () => {
     //number
     const [min, max] = randomIntArray(0, 1e4, 2);
@@ -46,7 +46,7 @@ Deno.test({
 });
 
 Deno.test({
-  name: "It should return an array of n prime number",
+  name: 'It should return an array of n prime number',
   fn: () => {
     //number
     const quantity = randomInt(0, 40);
