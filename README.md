@@ -1,7 +1,7 @@
 # Denum
 
 Mathematic module for [Deno](https://deno.land) that provide a helper for
-science computing.
+science computing. Provide a **simple** api to make **exact** computations with only **immutable** variables.
 
 [![Tags](https://img.shields.io/github/v/release/JOTSR/Denum)](https://github.com/JOTSR/Denum/releases)
 [![CI Status](https://img.shields.io/github/workflow/status/JOTSR/Denum/check)](https://github.com/JOTSR/Denum/actions)
@@ -12,4 +12,4 @@ science computing.
 
 All the modules are exposed in `mod.ts`
 
-[Documentation](https://doc.deno.land/https/https/deno.land/x/denum/mod.ts)
+[Documentation](https://doc.deno.land/https/deno.land/x/denum/mod.ts)
