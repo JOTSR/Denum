@@ -13,11 +13,11 @@ export function quantile(values: bigint[], ceil: number): bigint;
  */
 export function quantile(values: number[], ceil: number): number;
 export function quantile<T extends number | bigint>(
-  values: T[],
-  ceil: number,
+    values: T[],
+    ceil: number,
 ): T {
-  const sorted = [...values].sort((a, b) => a < b ? -1 : 1);
-  return sorted[Math.round(values.length * ceil) - 1];
+    const sorted = [...values].sort((a, b) => a < b ? -1 : 1);
+    return sorted[Math.round(values.length * ceil) - 1];
 }
 
 /**
@@ -33,6 +33,6 @@ export function median(...values: bigint[]): bigint;
  */
 export function median(...values: number[]): number;
 export function median<T extends number | bigint>(...values: T[]): T {
-  //@ts-ignore: Unreachable type error
-  return quantile<T>(values, 0.5);
+    //@ts-ignore: Unreachable type error
+    return quantile<T>(values, 0.5);
 }

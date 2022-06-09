@@ -7,16 +7,16 @@ import { gcd } from '../mod.ts';
  * @returns The least common multiple of the numbers in the array.
  */
 export function lcd<T extends number | bigint>(...n: T[]): T {
-  const [a, b, ...c] = n;
-  if (a < 0 || b < 0) {
-    throw new RangeError(`Only positive number allowed: (${a}, ${b})`);
-  }
-  if (
-    (typeof a !== 'bigint' && !Number.isInteger(a)) ||
-    (typeof b !== 'bigint' && !Number.isInteger(b))
-  ) {
-    throw new TypeError(`Only integer number allowed: (${a}, ${b})`);
-  }
-  const r = (a * b) / gcd(a, b) as T;
-  return (c.length === 0) ? r : lcd(r, ...c);
+    const [a, b, ...c] = n;
+    if (a < 0 || b < 0) {
+        throw new RangeError(`Only positive number allowed: (${a}, ${b})`);
+    }
+    if (
+        (typeof a !== 'bigint' && !Number.isInteger(a)) ||
+        (typeof b !== 'bigint' && !Number.isInteger(b))
+    ) {
+        throw new TypeError(`Only integer number allowed: (${a}, ${b})`);
+    }
+    const r = (a * b) / gcd(a, b) as T;
+    return (c.length === 0) ? r : lcd(r, ...c);
 }

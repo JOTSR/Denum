@@ -1,1 +1,14 @@
-{}
+{
+    "fmt": {
+        "options": {
+            "indentWidth": 4,
+            "singleQuote": true,
+            "proseWrap": "preserve"
+        },
+        "files": {
+            "exclude": [
+                "cov_profile"
+            ]
+        }
+    }
+}

@@ -7,9 +7,9 @@ import { factors } from '../mod.ts';
  * @returns Check result
  */
 export function isPrime<T extends number | bigint>(int: T): boolean {
-  //TODO implement AKS prime test
-  const result = factors(int);
-  return [...result.keys()].length === 1 && result.get(int) == 1;
+    //TODO implement AKS prime test
+    const result = factors(int);
+    return [...result.keys()].length === 1 && result.get(int) == 1;
 }
 
 /**
@@ -29,32 +29,32 @@ export function getPrimes<T extends number | bigint>(quantity: T): T[];
  */
 export function getPrimes<T extends number | bigint>(min: T, max: T): T[];
 export function getPrimes<T extends number | bigint>(...args: T[]): T[] {
-  const array: T[] = [];
+    const array: T[] = [];
 
-  if (args.length === 2) {
-    let [counter, max] = args;
+    if (args.length === 2) {
+        let [counter, max] = args;
 
-    while (counter < max) {
-      if (isPrime(counter)) {
-        //@ts-ignore type already checked
-        array.push(counter);
-      }
-      counter++;
+        while (counter < max) {
+            if (isPrime(counter)) {
+                //@ts-ignore type already checked
+                array.push(counter);
+            }
+            counter++;
+        }
     }
-  }
 
-  if (args.length === 1) {
-    const quantity = args[0];
-    let counter = (typeof quantity === 'number') ? 2 : 2n;
+    if (args.length === 1) {
+        const quantity = args[0];
+        let counter = (typeof quantity === 'number') ? 2 : 2n;
 
-    while (array.length < quantity) {
-      if (isPrime(counter)) {
-        //@ts-ignore type already checked
-        array.push(counter);
-      }
-      counter++;
+        while (array.length < quantity) {
+            if (isPrime(counter)) {
+                //@ts-ignore type already checked
+                array.push(counter);
+            }
+            counter++;
+        }
     }
-  }
 
-  return array;
+    return array;
 }

@@ -4,12 +4,12 @@
  * @returns number or bigint sign
  */
 export function sign<T extends number | bigint>(n: T): T {
-  //@ts-ignore type checking error
-  if (n < 0 && typeof n === 'number') return -1;
-  //@ts-ignore type checking error
-  if (n >= 0 && typeof n === 'number') return 1;
-  //@ts-ignore type checking error
-  if (n < 0 && typeof n === 'bigint') return -1n;
-  //@ts-ignore type checking error
-  return 1n;
+    //@ts-ignore type checking error
+    if (n < 0 && typeof n === 'number') return -1;
+    //@ts-ignore type checking error
+    if (n >= 0 && typeof n === 'number') return 1;
+    //@ts-ignore type checking error
+    if (n < 0 && typeof n === 'bigint') return -1n;
+    //@ts-ignore type checking error
+    return 1n;
 }

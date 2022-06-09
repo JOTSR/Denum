@@ -1,11 +1,11 @@
 {
-  "deno.enable": true,
-  "deno.lint": true,
-  "deno.unstable": true,
-  "deno.suggest.imports.hosts": {
-    "https://deno.land": true,
-    "https://denopkg.com": true,
-    "https://unpkg.com": true
-  },
-  "deno.config": "deno.jsonc"
+    "deno.enable": true,
+    "deno.lint": true,
+    "deno.unstable": true,
+    "deno.suggest.imports.hosts": {
+        "https://deno.land": true,
+        "https://denopkg.com": true,
+        "https://unpkg.com": true
+    },
+    "deno.config": "deno.jsonc"
 }

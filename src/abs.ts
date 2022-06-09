@@ -11,5 +11,5 @@ export function abs(value: number): number;
  */
 export function abs(value: bigint): bigint;
 export function abs<T extends number | bigint>(value: T): T {
-  return (value < 0 ? -value : value) as T;
+    return (value < 0 ? -value : value) as T;
 }

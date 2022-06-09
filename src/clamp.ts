@@ -15,12 +15,12 @@ export function clamp(value: number, min: number, max: number): number;
  */
 export function clamp(value: bigint, min: bigint, max: bigint): bigint;
 export function clamp<T extends number | bigint>(
-  value: T,
-  min: T,
-  max: T,
+    value: T,
+    min: T,
+    max: T,
 ): T {
-  if (min > max) {
-    throw new RangeError(`Invalid range, min:${min} > max: ${max}`);
-  }
-  return value > max ? max : value < min ? min : value;
+    if (min > max) {
+        throw new RangeError(`Invalid range, min:${min} > max: ${max}`);
+    }
+    return value > max ? max : value < min ? min : value;
 }
