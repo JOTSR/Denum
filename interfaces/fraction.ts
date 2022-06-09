@@ -309,7 +309,7 @@ export class Frac extends AbstractValue<Frac> {
 	}
 
 	/**
-	 * It returns a string representation of the fraction.
+	 * It returns a evaluable string representation of the fraction.
 	 * @returns The numerator and denominator of the fraction.
 	 */
 	toString(): string {
