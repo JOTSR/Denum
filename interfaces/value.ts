@@ -29,6 +29,7 @@ export abstract class AbstractValue<T> {
 	abstract isLesser(value: T, ifEqual: boolean): boolean
 	abstract between(min: T, max: T, includeBounds: boolean): boolean
 	abstract isInt(): boolean
+	abstract isEven(): boolean
 	//Conversion
 	abstract toString(): string
 	abstract toJSON(): string

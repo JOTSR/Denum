@@ -215,6 +215,15 @@ export class Frac extends AbstractValue<Frac> {
 	}
 
 	/**
+	 * `isEven` returns true if the fraction is even, false otherwise
+	 * @returns A boolean value.
+	 */
+	isEven(): boolean {
+		const {num, den} = this.simplify()
+		return (den === 1n) && (num % 2n === 0n)
+	}
+
+	/**
 	 * It compares two fractions and returns 0 if they are equal, 1 if the first is greater than the
 	 * second, and -1 if the first is less than the second.
 	 * @param {Frac} compared - The fraction to compare to.
