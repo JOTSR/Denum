@@ -1,43 +1,37 @@
-export abstract class AbstractValue<T>{
-    constructor() {}
-    /**
-     * Static methods
-     */
-    //Convert to
-    static toString: <T>(value: T) => string
-    static toFloat: <T>(value: T, decimals: bigint) => number
-    static toLatex: <T>(value: T) => string
-    //Convert from
-    static fromString: <T>(string: string) => T
-    static fromFloat: <T>(string: string) => T
-    static fromLatex: <T>(string: string) => T
-    //Maths
-    static invert: <T>(value: T) => T
-    static opposite: <T>(value: T) => T
-    static simplify: <T>(value: T) => T
-    /**
-     * Properties
-     */
-    //getters
-    abstract get value(): Record<string, bigint | number>
-    /**
-     * Instance methods
-     */
-    //Maths
-    abstract invert(): T
-    abstract opposite(): T
-    abstract simplify(): T
-    abstract sign(): -1n | 1n
-    abstract abs(): T
-    //Logical
-    abstract compare(): -1n | 0n | 1n
-    abstract isEqual(): boolean
-    abstract isGreater(): boolean
-    abstract isLesser(): boolean
-    abstract isGtEqual(): boolean
-    abstract isLtEqual(): boolean
-    //Conversion
-    abstract toString(): string
-    abstract toFloat(decimals: bigint): number
-    abstract toLatex(): string
+export abstract class AbstractValue<T> {
+	constructor() {}
+	/**
+	 * Static methods
+	 */
+	//Conversion
+	// static fromString: <T>(string: string) => T
+	// static fromJSON: <T>(string: string | Record<string, unknown>) => T
+	// static fromFloat: <T>(string: string) => T
+	// static fromLatex: <T>(string: string) => T
+	/**
+	 * Properties
+	 */
+	//getters
+	abstract get value(): Record<string, unknown>
+	/**
+	 * Instance methods
+	 */
+	//Maths
+	abstract invert(): T
+	abstract opposite(): T
+	abstract simplify(): T
+	abstract sign(): -1n | 1n
+	abstract abs(): T
+	//Logical
+	abstract compare(value: T): -1n | 0n | 1n
+	abstract isEqual(value: T): boolean
+	abstract isGreater(value: T, ifEqual: boolean): boolean
+	abstract isLesser(value: T, ifEqual: boolean): boolean
+	abstract between(min: T, max: T, includeBounds: boolean): boolean
+	abstract isInt(): boolean
+	//Conversion
+	abstract toString(): string
+	abstract toJSON(): string
+	abstract toFloat(decimals: bigint): number
+	abstract toLatex(): string
 }
