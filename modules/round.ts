@@ -11,7 +11,9 @@ export function round(
     mode: 'ceil' | 'floor' | 'nearest' = 'nearest',
 ): number {
     const power = 10 ** decimals;
-    if (mode == 'ceil') return Math.ceil(number * power) / power;
-    if (mode == 'floor') return Math.floor(number * power) / power;
-    return Math.round(number * power) / power;
+    const intPart = Math.trunc(number)
+    const decimalPart = parseFloat(`0.${number.toString().split('.')[1] ?? 0}`)
+    if (mode == 'ceil') return intPart + Math.ceil(decimalPart * power) / power;
+    if (mode == 'floor') return intPart + Math.floor(decimalPart * power) / power;
+    return intPart + Math.round(decimalPart * power) / power;
 }
