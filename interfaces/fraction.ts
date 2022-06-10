@@ -278,7 +278,7 @@ export class Frac extends AbstractValue<Frac> {
      * @param [includeBounds=false] - If true, the bounds are included in the comparison.
      * @returns A boolean value
      */
-    between(min: Frac, max: Frac, includeBounds = false): boolean {
+    isBetween(min: Frac, max: Frac, includeBounds = false): boolean {
         return (
             this.isGreater(min, includeBounds) &&
             this.isLesser(max, includeBounds)

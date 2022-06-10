@@ -279,7 +279,7 @@ export class Exponential extends AbstractValue<Exponential> {
      * @param [includeBounds=false] - If true, the bounds will be included in the comparison.
      * @returns A boolean value
      */
-    between(min: Exponential, max: Exponential, includeBounds = false) {
+    isBetween(min: Exponential, max: Exponential, includeBounds = false) {
         return this.isGreater(min, includeBounds) &&
             this.isLesser(max, includeBounds);
     }
