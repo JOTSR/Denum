@@ -1,0 +1,52 @@
+{
+    "scriptId": "76",
+    "url": "file:///D:/GitClone/Denum/src/range.test.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 10850, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "fn",
+            "ranges": [
+                { "startOffset": 171, "endOffset": 1566, "count": 1 },
+                { "startOffset": 1531, "endOffset": 1535, "count": 0 }
+            ],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 1421, "endOffset": 1453, "count": 96 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "fn",
+            "ranges": [
+                { "startOffset": 1641, "endOffset": 3367, "count": 1 },
+                { "startOffset": 3140, "endOffset": 3144, "count": 0 }
+            ],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 3002, "endOffset": 3034, "count": 44 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 3166, "endOffset": 3238, "count": 44 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 3256, "endOffset": 3287, "count": 44 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 3305, "endOffset": 3330, "count": 43 }],
+            "isBlockCoverage": true
+        }
+    ]
+}

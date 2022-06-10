@@ -1,0 +1,16 @@
+{
+    "scriptId": "93",
+    "url": "file:///D:/GitClone/Denum/src/sign.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 1515, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "sign",
+            "ranges": [{ "startOffset": 7, "endOffset": 220, "count": 0 }],
+            "isBlockCoverage": false
+        }
+    ]
+}

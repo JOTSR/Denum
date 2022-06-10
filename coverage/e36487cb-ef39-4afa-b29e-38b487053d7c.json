@@ -1,0 +1,56 @@
+{
+    "scriptId": "76",
+    "url": "file:///D:/GitClone/Denum/src/prime.test.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 7111, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "fn",
+            "ranges": [{ "startOffset": 223, "endOffset": 616, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 382, "endOffset": 397, "count": 14 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 583, "endOffset": 598, "count": 14 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "fn",
+            "ranges": [{ "startOffset": 715, "endOffset": 1067, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 855, "endOffset": 878, "count": 766 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 1029, "endOffset": 1052, "count": 0 }],
+            "isBlockCoverage": false
+        },
+        {
+            "functionName": "fn",
+            "ranges": [{ "startOffset": 1149, "endOffset": 1580, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 1325, "endOffset": 1348, "count": 39 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 1542, "endOffset": 1565, "count": 34 }],
+            "isBlockCoverage": true
+        }
+    ]
+}

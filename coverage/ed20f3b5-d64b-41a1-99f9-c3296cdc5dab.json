@@ -1,0 +1,16 @@
+{
+  "scriptId": "76",
+  "url": "file:///D:/GitClone/Denum/src/round.test.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 3884, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "fn",
+      "ranges": [{ "startOffset": 170, "endOffset": 900, "count": 1 }],
+      "isBlockCoverage": true
+    }
+  ]
+}

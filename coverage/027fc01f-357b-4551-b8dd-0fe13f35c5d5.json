@@ -1,0 +1,32 @@
+{
+    "scriptId": "78",
+    "url": "file:///D:/GitClone/Denum/src/map.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 8003, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "map",
+            "ranges": [
+                { "startOffset": 7, "endOffset": 1812, "count": 105 },
+                { "startOffset": 125, "endOffset": 228, "count": 0 },
+                { "startOffset": 378, "endOffset": 541, "count": 0 },
+                { "startOffset": 597, "endOffset": 641, "count": 0 },
+                { "startOffset": 676, "endOffset": 715, "count": 100 },
+                { "startOffset": 716, "endOffset": 763, "count": 100 },
+                { "startOffset": 764, "endOffset": 815, "count": 100 },
+                { "startOffset": 816, "endOffset": 867, "count": 100 },
+                { "startOffset": 869, "endOffset": 1054, "count": 100 },
+                { "startOffset": 1054, "endOffset": 1128, "count": 5 },
+                { "startOffset": 1129, "endOffset": 1176, "count": 5 },
+                { "startOffset": 1177, "endOffset": 1228, "count": 5 },
+                { "startOffset": 1229, "endOffset": 1280, "count": 5 },
+                { "startOffset": 1282, "endOffset": 1467, "count": 5 },
+                { "startOffset": 1467, "endOffset": 1811, "count": 0 }
+            ],
+            "isBlockCoverage": true
+        }
+    ]
+}

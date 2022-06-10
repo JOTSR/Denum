@@ -1,0 +1,16 @@
+{
+  "scriptId": "82",
+  "url": "file:///D:/GitClone/Denum/src/clamp.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 1823, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "clamp",
+      "ranges": [{ "startOffset": 7, "endOffset": 200, "count": 0 }],
+      "isBlockCoverage": false
+    }
+  ]
+}

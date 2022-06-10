@@ -1,0 +1,30 @@
+{
+    "scriptId": "78",
+    "url": "file:///D:/GitClone/Denum/src/gcd.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 2838, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "gcd",
+            "ranges": [
+                { "startOffset": 7, "endOffset": 515, "count": 9 },
+                { "startOffset": 68, "endOffset": 76, "count": 7 },
+                { "startOffset": 78, "endOffset": 161, "count": 2 },
+                { "startOffset": 161, "endOffset": 193, "count": 7 },
+                { "startOffset": 193, "endOffset": 216, "count": 4 },
+                { "startOffset": 218, "endOffset": 276, "count": 6 },
+                { "startOffset": 252, "endOffset": 275, "count": 3 },
+                { "startOffset": 278, "endOffset": 359, "count": 1 },
+                { "startOffset": 359, "endOffset": 399, "count": 6 },
+                { "startOffset": 399, "endOffset": 465, "count": 32 },
+                { "startOffset": 465, "endOffset": 494, "count": 6 },
+                { "startOffset": 494, "endOffset": 497, "count": 2 },
+                { "startOffset": 498, "endOffset": 512, "count": 4 }
+            ],
+            "isBlockCoverage": true
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "scriptId": "77",
+    "url": "file:///D:/GitClone/Denum/deps.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 451, "count": 1 }],
+            "isBlockCoverage": true
+        }
+    ]
+}

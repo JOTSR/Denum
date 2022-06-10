@@ -1,0 +1,20 @@
+{
+    "scriptId": "78",
+    "url": "file:///D:/GitClone/Denum/src/abs.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 1278, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "abs",
+            "ranges": [
+                { "startOffset": 7, "endOffset": 71, "count": 400 },
+                { "startOffset": 51, "endOffset": 59, "count": 304 },
+                { "startOffset": 60, "endOffset": 67, "count": 96 }
+            ],
+            "isBlockCoverage": true
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "scriptId": "78",
+    "url": "file:///D:/GitClone/Denum/src/sign.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 1515, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "sign",
+            "ranges": [
+                { "startOffset": 7, "endOffset": 220, "count": 4 },
+                { "startOffset": 40, "endOffset": 64, "count": 2 },
+                { "startOffset": 74, "endOffset": 84, "count": 1 },
+                { "startOffset": 84, "endOffset": 100, "count": 3 },
+                { "startOffset": 100, "endOffset": 124, "count": 2 },
+                { "startOffset": 134, "endOffset": 143, "count": 1 },
+                { "startOffset": 143, "endOffset": 158, "count": 2 },
+                { "startOffset": 158, "endOffset": 182, "count": 1 },
+                { "startOffset": 192, "endOffset": 219, "count": 1 }
+            ],
+            "isBlockCoverage": true
+        }
+    ]
+}

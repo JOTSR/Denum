@@ -1,0 +1,51 @@
+{
+    "scriptId": "76",
+    "url": "file:///D:/GitClone/Denum/src/lcd.test.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 5233, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "fn",
+            "ranges": [{ "startOffset": 229, "endOffset": 580, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 322, "endOffset": 351, "count": 5 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 493, "endOffset": 522, "count": 5 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "fn",
+            "ranges": [{ "startOffset": 649, "endOffset": 953, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 787, "endOffset": 802, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 870, "endOffset": 901, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "fn",
+            "ranges": [{ "startOffset": 1021, "endOffset": 1193, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 1128, "endOffset": 1143, "count": 1 }],
+            "isBlockCoverage": true
+        }
+    ]
+}

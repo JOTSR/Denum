@@ -1,0 +1,34 @@
+{
+    "scriptId": "79",
+    "url": "file:///D:/GitClone/Denum/src/prime.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 4564, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "isPrime",
+            "ranges": [
+                { "startOffset": 44, "endOffset": 170, "count": 1846 },
+                { "startOffset": 144, "endOffset": 167, "count": 524 }
+            ],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "getPrimes",
+            "ranges": [
+                { "startOffset": 178, "endOffset": 765, "count": 4 },
+                { "startOffset": 257, "endOffset": 451, "count": 2 },
+                { "startOffset": 324, "endOffset": 445, "count": 1359 },
+                { "startOffset": 360, "endOffset": 412, "count": 181 },
+                { "startOffset": 479, "endOffset": 745, "count": 2 },
+                { "startOffset": 568, "endOffset": 571, "count": 1 },
+                { "startOffset": 572, "endOffset": 576, "count": 1 },
+                { "startOffset": 618, "endOffset": 739, "count": 222 },
+                { "startOffset": 654, "endOffset": 706, "count": 56 }
+            ],
+            "isBlockCoverage": true
+        }
+    ]
+}

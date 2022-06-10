@@ -1,0 +1,73 @@
+{
+    "scriptId": "76",
+    "url": "file:///D:/GitClone/Denum/src/clamp.test.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 7352, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "fn",
+            "ranges": [{ "startOffset": 156, "endOffset": 1060, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 307, "endOffset": 339, "count": 100 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [
+                { "startOffset": 383, "endOffset": 439, "count": 100 },
+                { "startOffset": 406, "endOffset": 411, "count": 59 },
+                { "startOffset": 412, "endOffset": 439, "count": 41 },
+                { "startOffset": 426, "endOffset": 431, "count": 38 },
+                { "startOffset": 432, "endOffset": 439, "count": 3 }
+            ],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 489, "endOffset": 522, "count": 100 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 745, "endOffset": 797, "count": 100 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [
+                { "startOffset": 847, "endOffset": 927, "count": 100 },
+                { "startOffset": 879, "endOffset": 887, "count": 1 },
+                { "startOffset": 888, "endOffset": 927, "count": 99 },
+                { "startOffset": 908, "endOffset": 916, "count": 66 },
+                { "startOffset": 917, "endOffset": 927, "count": 33 }
+            ],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 983, "endOffset": 1028, "count": 100 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "fn",
+            "ranges": [{ "startOffset": 1129, "endOffset": 1644, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 1287, "endOffset": 1316, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 1572, "endOffset": 1607, "count": 1 }],
+            "isBlockCoverage": true
+        }
+    ]
+}

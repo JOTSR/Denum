@@ -1,0 +1,62 @@
+{
+    "scriptId": "89",
+    "url": "file:///D:/GitClone/Denum/src/random.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 7313, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "random",
+            "ranges": [{ "startOffset": 7, "endOffset": 82, "count": 0 }],
+            "isBlockCoverage": false
+        },
+        {
+            "functionName": "randomInt",
+            "ranges": [
+                { "startOffset": 90, "endOffset": 525, "count": 6 },
+                { "startOffset": 154, "endOffset": 181, "count": 3 },
+                { "startOffset": 183, "endOffset": 388, "count": 3 },
+                { "startOffset": 390, "endOffset": 459, "count": 3 },
+                { "startOffset": 459, "endOffset": 524, "count": 0 }
+            ],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [
+                { "startOffset": 255, "endOffset": 301, "count": 26 },
+                { "startOffset": 292, "endOffset": 295, "count": 19 },
+                { "startOffset": 296, "endOffset": 301, "count": 7 }
+            ],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "randomArray",
+            "ranges": [{ "startOffset": 533, "endOffset": 667, "count": 0 }],
+            "isBlockCoverage": false
+        },
+        {
+            "functionName": "randomIntArray",
+            "ranges": [
+                { "startOffset": 675, "endOffset": 1078, "count": 2 },
+                { "startOffset": 751, "endOffset": 777, "count": 1 },
+                { "startOffset": 779, "endOffset": 948, "count": 1 },
+                { "startOffset": 950, "endOffset": 1061, "count": 1 },
+                { "startOffset": 1061, "endOffset": 1077, "count": 0 }
+            ],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 833, "endOffset": 859, "count": 2 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 1005, "endOffset": 1031, "count": 2 }],
+            "isBlockCoverage": true
+        }
+    ]
+}

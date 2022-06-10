@@ -1,0 +1,22 @@
+{
+    "scriptId": "78",
+    "url": "file:///D:/GitClone/Denum/src/round.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 1771, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "round",
+            "ranges": [
+                { "startOffset": 7, "endOffset": 296, "count": 4 },
+                { "startOffset": 130, "endOffset": 171, "count": 1 },
+                { "startOffset": 171, "endOffset": 205, "count": 3 },
+                { "startOffset": 205, "endOffset": 247, "count": 1 },
+                { "startOffset": 247, "endOffset": 295, "count": 2 }
+            ],
+            "isBlockCoverage": true
+        }
+    ]
+}

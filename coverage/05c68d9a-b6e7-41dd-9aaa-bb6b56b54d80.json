@@ -1,0 +1,50 @@
+{
+    "scriptId": "76",
+    "url": "file:///D:/GitClone/Denum/src/mean.test.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 9477, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "fn",
+            "ranges": [{ "startOffset": 234, "endOffset": 2221, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 407, "endOffset": 451, "count": 100 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 763, "endOffset": 809, "count": 200 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 995, "endOffset": 1039, "count": 10 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 1405, "endOffset": 1451, "count": 20 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [
+                { "startOffset": 1639, "endOffset": 1703, "count": 100 }
+            ],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [
+                { "startOffset": 2046, "endOffset": 2092, "count": 200 }
+            ],
+            "isBlockCoverage": true
+        }
+    ]
+}

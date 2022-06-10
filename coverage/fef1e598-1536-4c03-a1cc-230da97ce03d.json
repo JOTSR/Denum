@@ -1,0 +1,14 @@
+{
+  "scriptId": "11",
+  "url": "deno:ext/web/00_infra.js",
+  "functions": [
+    {
+      "functionName": "assert",
+      "ranges": [
+        { "startOffset": 7295, "endOffset": 7409, "count": 16 },
+        { "startOffset": 7361, "endOffset": 7405, "count": 0 }
+      ],
+      "isBlockCoverage": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+    "scriptId": "84",
+    "url": "file:///D:/GitClone/Denum/src/fraction.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 24349, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "<instance_members_initializer>",
+            "ranges": [{ "startOffset": 51, "endOffset": 4486, "count": 0 }],
+            "isBlockCoverage": true
+        }
+    ]
+}

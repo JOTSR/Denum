@@ -1,0 +1,59 @@
+{
+    "scriptId": "79",
+    "url": "file:///D:/GitClone/Denum/src/random.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 8050, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "random",
+            "ranges": [{ "startOffset": 165, "endOffset": 240, "count": 0 }],
+            "isBlockCoverage": false
+        },
+        {
+            "functionName": "randomInt",
+            "ranges": [
+                { "startOffset": 248, "endOffset": 708, "count": 7 },
+                { "startOffset": 501, "endOffset": 571, "count": 0 },
+                { "startOffset": 573, "endOffset": 707, "count": 0 }
+            ],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [
+                { "startOffset": 422, "endOffset": 466, "count": 126 },
+                { "startOffset": 457, "endOffset": 460, "count": 56 },
+                { "startOffset": 461, "endOffset": 466, "count": 70 }
+            ],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "randomArray",
+            "ranges": [{ "startOffset": 933, "endOffset": 1070, "count": 0 }],
+            "isBlockCoverage": false
+        },
+        {
+            "functionName": "randomIntArray",
+            "ranges": [
+                { "startOffset": 1078, "endOffset": 1579, "count": 2 },
+                { "startOffset": 1154, "endOffset": 1180, "count": 0 },
+                { "startOffset": 1182, "endOffset": 1341, "count": 0 },
+                { "startOffset": 1562, "endOffset": 1578, "count": 0 }
+            ],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 1278, "endOffset": 1302, "count": 0 }],
+            "isBlockCoverage": false
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 1499, "endOffset": 1523, "count": 7 }],
+            "isBlockCoverage": true
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "scriptId": "79",
+    "url": "file:///D:/GitClone/Denum/src/median.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 2829, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "quantile",
+            "ranges": [{ "startOffset": 7, "endOffset": 162, "count": 6 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [
+                { "startOffset": 77, "endOffset": 101, "count": 3204 },
+                { "startOffset": 93, "endOffset": 97, "count": 1806 },
+                { "startOffset": 98, "endOffset": 101, "count": 1398 }
+            ],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "median",
+            "ranges": [{ "startOffset": 170, "endOffset": 234, "count": 2 }],
+            "isBlockCoverage": true
+        }
+    ]
+}

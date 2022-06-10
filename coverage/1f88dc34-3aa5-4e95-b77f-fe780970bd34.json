@@ -1,0 +1,28 @@
+{
+    "scriptId": "89",
+    "url": "file:///D:/GitClone/Denum/src/factors.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 3552, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "factors",
+            "ranges": [
+                { "startOffset": 39, "endOffset": 753, "count": 7708 },
+                { "startOffset": 91, "endOffset": 114, "count": 7522 },
+                { "startOffset": 116, "endOffset": 191, "count": 0 },
+                { "startOffset": 316, "endOffset": 320, "count": 186 },
+                { "startOffset": 321, "endOffset": 324, "count": 7522 },
+                { "startOffset": 334, "endOffset": 712, "count": 10611137 },
+                { "startOffset": 369, "endOffset": 589, "count": 22786 },
+                { "startOffset": 488, "endOffset": 513, "count": 400 },
+                { "startOffset": 530, "endOffset": 547, "count": 22386 },
+                { "startOffset": 589, "endOffset": 706, "count": 10588351 },
+                { "startOffset": 660, "endOffset": 674, "count": 9821 }
+            ],
+            "isBlockCoverage": true
+        }
+    ]
+}

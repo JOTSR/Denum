@@ -1,0 +1,26 @@
+{
+    "scriptId": "87",
+    "url": "file:///D:/GitClone/Denum/src/range.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 15925, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "checkRangeProperties",
+            "ranges": [{ "startOffset": 0, "endOffset": 1113, "count": 0 }],
+            "isBlockCoverage": false
+        },
+        {
+            "functionName": "irange",
+            "ranges": [{ "startOffset": 1121, "endOffset": 2388, "count": 0 }],
+            "isBlockCoverage": false
+        },
+        {
+            "functionName": "range",
+            "ranges": [{ "startOffset": 2396, "endOffset": 3214, "count": 0 }],
+            "isBlockCoverage": false
+        }
+    ]
+}

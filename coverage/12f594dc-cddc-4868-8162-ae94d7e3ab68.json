@@ -1,0 +1,48 @@
+{
+    "scriptId": "78",
+    "url": "file:///D:/GitClone/Denum/src/random.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 8050, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "random",
+            "ranges": [{ "startOffset": 165, "endOffset": 240, "count": 100 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "randomInt",
+            "ranges": [
+                { "startOffset": 248, "endOffset": 708, "count": 432 },
+                { "startOffset": 323, "endOffset": 348, "count": 0 },
+                { "startOffset": 350, "endOffset": 501, "count": 0 },
+                { "startOffset": 642, "endOffset": 707, "count": 0 }
+            ],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 422, "endOffset": 466, "count": 0 }],
+            "isBlockCoverage": false
+        },
+        {
+            "functionName": "randomArray",
+            "ranges": [{ "startOffset": 933, "endOffset": 1070, "count": 2 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [
+                { "startOffset": 1022, "endOffset": 1043, "count": 100 }
+            ],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "randomIntArray",
+            "ranges": [{ "startOffset": 1078, "endOffset": 1579, "count": 0 }],
+            "isBlockCoverage": false
+        }
+    ]
+}

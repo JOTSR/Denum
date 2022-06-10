@@ -1,0 +1,16 @@
+{
+    "scriptId": "83",
+    "url": "file:///D:/GitClone/Denum/src/map.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 8211, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "map",
+            "ranges": [{ "startOffset": 7, "endOffset": 1812, "count": 0 }],
+            "isBlockCoverage": false
+        }
+    ]
+}

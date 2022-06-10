@@ -1,0 +1,47 @@
+{
+  "scriptId": "76",
+  "url": "file:///D:/GitClone/Denum/src/gcd.test.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 6775, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "fn",
+      "ranges": [
+        { "startOffset": 230, "endOffset": 945, "count": 1 },
+        { "startOffset": 299, "endOffset": 484, "count": 26 },
+        { "startOffset": 421, "endOffset": 474, "count": 3 },
+        { "startOffset": 642, "endOffset": 838, "count": 42 },
+        { "startOffset": 772, "endOffset": 828, "count": 3 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "fn",
+      "ranges": [{ "startOffset": 1013, "endOffset": 1317, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 1151, "endOffset": 1166, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 1234, "endOffset": 1265, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "fn",
+      "ranges": [{ "startOffset": 1384, "endOffset": 1556, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 1491, "endOffset": 1506, "count": 1 }],
+      "isBlockCoverage": true
+    }
+  ]
+}

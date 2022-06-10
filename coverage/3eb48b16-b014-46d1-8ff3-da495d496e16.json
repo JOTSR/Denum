@@ -1,0 +1,41 @@
+{
+    "scriptId": "76",
+    "url": "file:///D:/GitClone/Denum/src/abs.test.ts",
+    "functions": [
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 0, "endOffset": 3707, "count": 1 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "fn",
+            "ranges": [
+                { "startOffset": 156, "endOffset": 787, "count": 1 },
+                { "startOffset": 467, "endOffset": 586, "count": 100 },
+                { "startOffset": 631, "endOffset": 781, "count": 100 },
+                { "startOffset": 672, "endOffset": 684, "count": 96 },
+                { "startOffset": 685, "endOffset": 696, "count": 4 }
+            ],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 215, "endOffset": 247, "count": 100 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [{ "startOffset": 304, "endOffset": 426, "count": 100 }],
+            "isBlockCoverage": true
+        },
+        {
+            "functionName": "",
+            "ranges": [
+                { "startOffset": 358, "endOffset": 404, "count": 1400 },
+                { "startOffset": 395, "endOffset": 398, "count": 704 },
+                { "startOffset": 399, "endOffset": 404, "count": 696 }
+            ],
+            "isBlockCoverage": true
+        }
+    ]
+}
