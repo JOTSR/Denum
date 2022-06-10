@@ -326,21 +326,3 @@ export class Exponential extends AbstractValue<Exponential> {
         return expression;
     }
 }
-
-export function dichotomy(
-    exp: string,
-    x: string,
-    r: number,
-    min = Number.MIN_SAFE_INTEGER + 1,
-    max = Number.MAX_SAFE_INTEGER,
-    p = 15,
-): number {
-    const moy = (min + max) / 2;
-    const result = Math.round(r * (10 ** p));
-    const evaluate = Math.round(
-        eval(exp.replace(x, moy.toString())) * (10 ** p),
-    );
-    if (evaluate < result) return dichotomy(exp, x, r, moy, max, p);
-    if (evaluate > result) return dichotomy(exp, x, r, min, moy, p);
-    return moy;
-}
