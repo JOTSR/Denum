@@ -1,5 +1,5 @@
 export * from './interfaces/fraction.ts';
-export * from './interfaces/fraction.ts';
+export * from './interfaces/exponential.ts';
 export * from './modules/abs.ts';
 export * from './modules/clamp.ts';
 export * from './modules/factors.ts';
