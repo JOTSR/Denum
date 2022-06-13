@@ -12,7 +12,7 @@ export function round(
 ): number {
     const power = 10 ** decimals;
     const intPart = Math.trunc(number)
-    const decimalPart = parseFloat(`0.${number.toString().split('.')[1] ?? 0}`)
+    const decimalPart = Math.sign(number) * parseFloat(`0.${number.toString().split('.')[1] ?? 0}`)
     if (mode == 'ceil') return intPart + Math.ceil(decimalPart * power) / power;
     if (mode == 'floor') return intPart + Math.floor(decimalPart * power) / power;
     return intPart + Math.round(decimalPart * power) / power;
