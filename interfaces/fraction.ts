@@ -160,6 +160,16 @@ export class Frac extends AbstractValue<Frac> {
     }
 
     /**
+     * It takes a bigint as an argument and returns a new Frac object with the numerator and
+     * denominator raised to the power of the argument
+     * @param {bigint} power - The power to raise the fraction to.
+     * @returns A new Frac object with the numerator and denominator raised to the power of the input.
+     */
+    power(power: bigint): Frac {
+        return new Frac(this.num ** power, this.den ** power);
+    }
+
+    /**
      * It returns a new fraction that is the same as the original fraction, but simplified
      * @returns The simplified fraction.
      */
@@ -227,7 +237,7 @@ export class Frac extends AbstractValue<Frac> {
      * @returns a boolean value.
      */
     isNull(): boolean {
-        return this.num === 0n
+        return this.num === 0n;
     }
 
     /**
