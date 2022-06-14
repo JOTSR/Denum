@@ -2,6 +2,7 @@ export * from './interfaces/fraction.ts';
 export * from './interfaces/exponential.ts';
 export * from './modules/abs.ts';
 export * from './modules/clamp.ts';
+export * from './modules/dichotomy.ts';
 export * from './modules/factors.ts';
 export * from './modules/gcd.ts';
 export * from './modules/lcd.ts';
