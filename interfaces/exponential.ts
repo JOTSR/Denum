@@ -48,14 +48,17 @@ export class Exponential extends AbstractValue<Exponential> {
     /**
      * The constructor function takes in a base, an exponent, and a sign, and sets the base, exponent,
      * and sign of the object to the values passed in.
-     * @param {Frac} base - The base of the exponent.
-     * @param {Frac} exponent - The exponent of the power.
+     * @param {Frac | number} base - The base of the exponent.
+     * @param {Frac | number} exponent - The exponent of the power.
      * @param [sign=1n] - The sign of the number (-1n | 1n).
      */
-    constructor(base: Frac, exponent: Frac, sign = 1n) {
+    constructor(base: Frac | number, exponent: Frac | number, sign = 1n) {
         super();
-        this.#base = base;
-        this.#exponent = exponent;
+        if (typeof base === 'number') this.#base = Frac.fromFloat(base);
+        else this.#base = base;
+        if (typeof exponent === 'number') {
+            this.#exponent = Frac.fromFloat(exponent);
+        } else this.#exponent = exponent;
         this.#sign = sign < 0n ? -1n : 1n;
     }
 
