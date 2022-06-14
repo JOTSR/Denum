@@ -223,6 +223,14 @@ export class Frac extends AbstractValue<Frac> {
     }
 
     /**
+     * It returns true if the number is 0n, and false otherwise
+     * @returns a boolean value.
+     */
+    isNull(): boolean {
+        return this.num === 0n
+    }
+
+    /**
      * It compares two fractions and returns 0 if they are equal, 1 if the first is greater than the
      * second, and -1 if the first is less than the second.
      * @param {Frac} compared - The fraction to compare to.
