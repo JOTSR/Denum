@@ -1,5 +1,6 @@
-export * from './interfaces/fraction.ts';
+export * from './interfaces/complex.ts';
 export * from './interfaces/exponential.ts';
+export * from './interfaces/fraction.ts';
 export * from './modules/abs.ts';
 export * from './modules/clamp.ts';
 export * from './modules/dichotomy.ts';
